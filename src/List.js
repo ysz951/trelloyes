@@ -20,6 +20,8 @@ function List(props) {
         </section>
     );
   }
-
+List.defaultProps = {
+  cards: [],
+};
 export default List;
 

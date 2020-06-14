@@ -3,8 +3,8 @@ import './App.css';
 import List from './List.js'
 
 function App(props) {
-  const arrayOfLis = props.STORE.lists.map((list) => 
-    <List header = {list.header} cards = {list.cardIds.map((id) => props.STORE.allCards[id])} key = {list.id}/>
+  const arrayOfLis = props.lists.map((list) => 
+    <List header = {list.header} cards = {list.cardIds.map((id) => props.allCards[id])} key = {list.id}/>
   );
  
   return (
@@ -18,5 +18,7 @@ function App(props) {
     </main>
   );
 }
-
+App.defaultProps = {
+  lists: [],
+};
 export default App;
