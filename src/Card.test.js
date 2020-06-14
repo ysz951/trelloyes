@@ -11,7 +11,7 @@ describe('List component', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders the UI as expected', (i = 2) => {
+  it('renders the UI as expected', () => {
     const tree = renderer
       .create(<Card title='First card' content = 'lorem ipsum'/>)
       .toJSON();
