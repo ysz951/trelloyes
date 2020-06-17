@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import Card from './Card';
-import STORE from './store';
 
 describe('List component', () => {
   it('renders without crashing', () => {
