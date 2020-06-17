@@ -6,7 +6,7 @@ import App from './App';
 
 
 ReactDOM.render(
-  <App lists = {STORE.lists} allCards = {STORE.allCards}/>,
+  <App store = {STORE} />,
   document.getElementById('root')
 );
 
