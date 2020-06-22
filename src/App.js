@@ -49,8 +49,9 @@ class App extends React.Component {
         allCards: newCards
       }
     })
+    console.log(this.state.store.lists, this.state.store.allCards)
   };
-
+  
   handleAddCard = (listId) => {
     const newCard = newRandomCard()
 
