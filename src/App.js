@@ -33,22 +33,27 @@ class App extends React.Component {
   }
 
 
-  handleDeleteCard = (cardId) => {
+  handleDeleteCard = (cardId,listId) => {
     const { lists, allCards } = this.state.store;
 
     const newLists = lists.map(list => ({
       ...list,
-      cardIds: list.cardIds.filter(id => id !== cardId)
+      // cardIds: list.cardIds.filter(id => id !== cardId) 
+      cardIds: list.id === listId ? list.cardIds.filter(id => id !== cardId) : list.cardIds
+
     }));
 
-    const newCards = omit(allCards, cardId);
+    // const newCards = omit(allCards, cardId);
 
     this.setState({
       store: {
+        // lists: this.state.store.lists,
         lists: newLists,
-        allCards: newCards
+        allCards
+        // allCards: newCards
       }
     })
+    console.log(this.state.store.allCards, this.state.store.lists)
   };
 
   handleAddCard = (listId) => {
@@ -74,24 +79,39 @@ class App extends React.Component {
       }
     })
   };
-  render(){
+  renderList() {
     const store = this.state.store;
+    return store.lists.map((list) => 
+    <List 
+      header = {list.header}  
+      cards = {list.cardIds.map((id) => store.allCards[id])} 
+      key = {list.id} 
+      id = {list.id} 
+      onClickDelete={this.handleDeleteCard}
+      onClickAdd={this.handleAddCard}
+    />
+  )
+  }
+  render() {
+    const {store} = this.state;
+    const renderList = store.lists.map((list) => 
+      <List 
+        header = {list.header}  
+        cards = {list.cardIds.map((id) => store.allCards[id])} 
+        key = {list.id} 
+        id = {list.id} 
+        onClickDelete={this.handleDeleteCard}
+        onClickAdd={this.handleAddCard}
+      />
+    );
     return (
       <main className="App">
         <header className="App-header">
           <h1>Trelloyes!</h1>
         </header>
         <div className="App-list">
-          {store.lists.map((list) => 
-            <List 
-              header = {list.header}  
-              cards = {list.cardIds.map((id) => store.allCards[id])} 
-              key = {list.id} 
-              id = {list.id} 
-              onClickDelete={this.handleDeleteCard}
-              onClickAdd={this.handleAddCard}
-            />
-          )}
+          {renderList}
+          {/* {this.renderList()} */}
         </div>
       </main>
     );

@@ -8,7 +8,7 @@ exports[`List component renders the UI as expected 1`] = `
     className="List-header"
   >
     <h2>
-      Third list
+      First list
     </h2>
   </header>
   <div
@@ -18,6 +18,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -33,6 +34,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -48,36 +50,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Third card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Fourth card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -93,6 +66,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -108,6 +82,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -123,36 +98,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Eighth card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Ninth card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -168,21 +114,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Eleventh card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -198,6 +130,7 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
+        onClick={[Function]}
         type="button"
       >
         delete
@@ -211,6 +144,434 @@ exports[`List component renders the UI as expected 1`] = `
     </div>
     <button
       className="List-add-button"
+      onClick={[Function]}
+      type="button"
+    >
+      + Add Random Card
+    </button>
+  </div>
+</section>
+`;
+
+exports[`List component renders the UI as expected 2`] = `
+<section
+  className="List"
+>
+  <header
+    className="List-header"
+  >
+    <h2>
+      Second list
+    </h2>
+  </header>
+  <div
+    className="List-cards"
+  >
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Second card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Third card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Fourth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Sixth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Eighth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Ninth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Eleventh card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <button
+      className="List-add-button"
+      onClick={[Function]}
+      type="button"
+    >
+      + Add Random Card
+    </button>
+  </div>
+</section>
+`;
+
+exports[`List component renders the UI as expected 3`] = `
+<section
+  className="List"
+>
+  <header
+    className="List-header"
+  >
+    <h2>
+      Third list
+    </h2>
+  </header>
+  <div
+    className="List-cards"
+  >
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        First card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Second card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Third card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Fourth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Fifth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Sixth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Seventh card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Eighth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Ninth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Tenth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Eleventh card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Twelfth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Thirteenth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <button
+      className="List-add-button"
+      onClick={[Function]}
+      type="button"
+    >
+      + Add Random Card
+    </button>
+  </div>
+</section>
+`;
+
+exports[`List component renders the UI as expected 4`] = `
+<section
+  className="List"
+>
+  <header
+    className="List-header"
+  >
+    <h2>
+      Fourth list
+    </h2>
+  </header>
+  <div
+    className="List-cards"
+  >
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Twelfth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+    >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Thirteenth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <button
+      className="List-add-button"
+      onClick={[Function]}
       type="button"
     >
       + Add Random Card

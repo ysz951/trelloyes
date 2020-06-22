@@ -11,11 +11,13 @@ describe('List component', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders the UI as expected', (i = 2) => {
-    const tree = renderer
-      .create(<List header={STORE.lists[i].header} cards = {STORE.lists[i].cardIds.map((id) => STORE.allCards[id])}/>)
-      .toJSON();
-    expect(tree).toMatchSnapshot();  
+  it('renders the UI as expected', () => {
+    for (let i = 0; i < 4; i++){
+      let tree = renderer
+        .create(<List header={STORE.lists[i].header} cards = {STORE.lists[i].cardIds.map((id) => STORE.allCards[id])}/>)
+        .toJSON();
+      expect(tree).toMatchSnapshot();  
+    }
   });
 
 });
