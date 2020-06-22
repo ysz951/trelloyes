@@ -53,7 +53,7 @@ class App extends React.Component {
         // allCards: newCards
       }
     })
-    console.log(this.state.store.allCards, this.state.store.lists)
+    console.log(this.state.store.lists, this.state.store.allCards)
   };
 
   handleAddCard = (listId) => {
